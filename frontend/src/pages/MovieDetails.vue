@@ -151,6 +151,7 @@ const setNumberOfSeats = (index) =>{
 					<div class="flex flex-row align-middle gap-4 justify-center" v-for="row in Object.keys(seatStructure)" 
 						:key="row"
 					>
+					
 							<span 
 								class="cursor-pointer h-8 w-6 m-2 bg-blue-300 rounded-[2px]" 
 								:class="seat[1] === 'Available' ? 'bg-blue-300' 
