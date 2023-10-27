@@ -1,0 +1,14 @@
+{
+  "name": "ticket_booking",
+  "version": "1.0.0",
+  "description": "Movie Ticket Booking App using Vue, Frappe UI and Frappe Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd frontend && yarn dev",
+    "build": "cd frontend && yarn build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
