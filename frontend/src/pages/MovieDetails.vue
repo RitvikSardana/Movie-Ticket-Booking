@@ -4,7 +4,7 @@ import { Card } from 'frappe-ui';
 import { Button } from 'frappe-ui';
 import { reactive, ref } from 'vue';
 
-const currentStep = ref(4)
+const currentStep = ref(0)
 
 function getSeatStructure(alphabets, numbers) {
 	const structure = {}
@@ -151,7 +151,7 @@ const setNumberOfSeats = (index) =>{
 					<div class="flex flex-row align-middle gap-4 justify-center" v-for="row in Object.keys(seatStructure)" 
 						:key="row"
 					>
-					
+
 							<span 
 								class="cursor-pointer h-8 w-6 m-2 bg-blue-300 rounded-[2px]" 
 								:class="seat[1] === 'Available' ? 'bg-blue-300' 
