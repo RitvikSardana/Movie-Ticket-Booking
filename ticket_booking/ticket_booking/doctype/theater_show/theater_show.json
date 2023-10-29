@@ -7,19 +7,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "title",
+  "theatre",
   "column_break_vqyt",
   "start_time"
  ],
  "fields": [
-  {
-   "fieldname": "title",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Theatre",
-   "options": "Movie Theater",
-   "reqd": 1
-  },
   {
    "fieldname": "column_break_vqyt",
    "fieldtype": "Column Break"
@@ -28,11 +20,19 @@
    "fieldname": "start_time",
    "fieldtype": "Time",
    "label": "Start Time"
+  },
+  {
+   "fieldname": "theatre",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Theatre",
+   "options": "Movie Theater",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-27 12:58:49.460244",
+ "modified": "2023-10-29 12:07:35.762336",
  "modified_by": "Administrator",
  "module": "Ticket Booking",
  "name": "Theater Show",

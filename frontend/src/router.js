@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { session } from './data/session'
 import { userResource } from '@/data/user'
-
 const routes = [
   {
     path: '/',
@@ -9,9 +8,10 @@ const routes = [
     component: () => import('@/pages/Home.vue'),
   },
   {
-    name: 'Login',
-    path: '/account/login',
-    component: () => import('@/pages/Login.vue'),
+    path: '/:id',
+    name: 'Movies',
+    component : () => import('@/pages/MovieDetails.vue'),
+    props:true
   },
   {
     name: 'Login',

@@ -7,12 +7,15 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "movie",
+  "seats_column",
+  "seats_booked",
+  "section_break_lder",
+  "theatre",
   "date",
   "show",
   "column_break_uxwr",
   "number_of_tickets",
-  "theatre",
+  "movie",
   "amended_from"
  ],
  "fields": [
@@ -53,11 +56,11 @@
    "read_only": 1
   },
   {
-   "fetch_from": "show.title",
+   "fetch_from": ".title",
    "fieldname": "movie",
    "fieldtype": "Link",
    "label": "Movie",
-   "options": "Movie Theater"
+   "options": "Movie"
   },
   {
    "fetch_from": "show.title",
@@ -66,12 +69,26 @@
    "label": "Theatre",
    "options": "Movie Theater",
    "read_only": 1
+  },
+  {
+   "fieldname": "section_break_lder",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "seats_column",
+   "fieldtype": "Column Break",
+   "label": "Seats"
+  },
+  {
+   "fieldname": "seats_booked",
+   "fieldtype": "JSON",
+   "label": "Seats Booked"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-10-27 13:04:01.365868",
+ "modified": "2023-10-29 18:02:38.381985",
  "modified_by": "Administrator",
  "module": "Ticket Booking",
  "name": "Ticket Booking",
