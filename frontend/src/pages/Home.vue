@@ -6,7 +6,7 @@
       <router-link 
         :to = "{name:'Movies',params:{id:movie.name}}"
         v-for="movie in movies.data"
-        class=" max-w-[450px] "
+
       >
           <Card
             :title="movie.title"

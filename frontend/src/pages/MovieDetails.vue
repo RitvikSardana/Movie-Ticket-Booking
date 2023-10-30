@@ -179,9 +179,8 @@ const moveToNextStep = () => {
 			</div>
 
 			<div v-else-if="currentStep === 2">
-				{{ bookingData.numberOfSeats  }}
 				<div class="flex flex-col space-y-4">
-					<label class="font-medium text-xl text-gray-900 mt-7">Home Many Seats?</label>
+					<label class="font-medium text-xl text-gray-900 mt-7">Select Date</label>
 					<Input class="" 
 						type="date" 
 						v-model="bookingData.date"
