@@ -9,7 +9,6 @@ const props = defineProps({
 	}
 })
 
-
 const currentStep = ref(0)
 
 const movie = ref(props.id)
@@ -145,7 +144,7 @@ const moveToNextStep = () => {
 
 		<div class="max-w-full ">
 
-			<div class="mx-12" v-if="currentStep === 0">
+			<div class="mx-12 flex flex-col items-center" v-if="currentStep === 0">
 
 				<div class="  mt-7 p-2 bg-white shadow-2xl content-center rounded">
 					<img :src="movieDoc.poster" alt="Movie Poster">
